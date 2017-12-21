@@ -93,9 +93,11 @@ class Ext_Dir extends DirectoryIterator {
 				}
 				if (!empty($ext)) {
 					if (is_array($ext)) {
-						$rs = in_array(end(explode('.',$file)), $ext);
+						$arr = explode('.',$file);
+                        $rs = in_array(end($arr), $ext);
 					} else {
-						$rs = in_str(end(explode('.', $file)), $ext);	
+					    $arr = explode('.', $file);
+						$rs = in_str(end($arr), $ext);
 					} if (!$rs) {
 						continue;
 					}	

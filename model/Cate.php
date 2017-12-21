@@ -12,7 +12,7 @@ class Cate_Model extends Model {
 	}	
 	
 	
-	public function getList() {
+	public function getList($where=[],$limit="",$order="") {
 		$cacheKey = 'cate_list';
 		if ($cacheData = $this->cache->getFromBox($cacheKey)) {
 			return $cacheData;	

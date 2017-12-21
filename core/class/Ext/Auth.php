@@ -38,7 +38,7 @@ class Ext_Auth {
 	}
 	
 	
-	public function check($havePre, $needPre) {
+	public static function check($havePre, $needPre) {
 		return $havePre & $needPre;	
 	}
 }

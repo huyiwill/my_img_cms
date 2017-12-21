@@ -5,8 +5,8 @@
 	$Author: 许仙 <QQ:1216560669 > $
 	$Time: 2011-12-27 17:23 $
 */
-	
 
+ini_set("display_errors","On");error_reporting(E_ALL);
 
 define('APP_PATH', rtrim(dirname(__FILE__), '/\\') . DIRECTORY_SEPARATOR);
 
